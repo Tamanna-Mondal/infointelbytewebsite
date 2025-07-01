@@ -20,16 +20,16 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 
+// Routing 
+app.get('/intelbyte', (req, res) => {
+   res.render("index.ejs");
+});
 
 app.get('/', (req, res) => {
   res.redirect('/intelbyte');
 });
 
 
-// Routing 
-app.get('/intelbyte', (req, res) => {
-   res.render("index.ejs");
-});
 
 app.get('/intelbyte/:page', (req,res) =>{
   const page = req.params.page;
