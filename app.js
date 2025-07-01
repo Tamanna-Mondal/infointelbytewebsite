@@ -16,6 +16,7 @@ app.use(express.static('aset'));
 app.engine('ejs', ejsMate);
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
+app.use(express.static('aset'));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
@@ -34,7 +35,8 @@ app.get('/', (req, res) => {
 app.get('/intelbyte/:page', (req,res) =>{
   const page = req.params.page;
 
-  const allPage = ['about' , 'package' , 'contact' ,'career' ,  'portfolio' , 'blog' , 'contact' , 'package', 'App Developmentl' , 'Web Development' , 'Software Development' , 'Digital Marketing' , 'Graphic Designing' , 'Blockchain Developmente' ,'Blockchain Development', 'Game Development' ];
+ const allPage = ['about', 'package', 'contact', 'career', 'portfolio', 'blog', 'App Development', 'Web Development', 'Software Development', 'Digital Marketing', 'Graphic Designing', 'Blockchain Development', 'Game Development'];
+
   console.log(page);
 
   if(allPage.includes(page)){
