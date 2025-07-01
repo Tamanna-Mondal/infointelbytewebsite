@@ -21,6 +21,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 
 
+app.get('/', (req, res) => {
+  res.redirect('/intelbyte');
+});
+
+
 // Routing 
 app.get('/intelbyte', (req, res) => {
    res.render("index.ejs");
