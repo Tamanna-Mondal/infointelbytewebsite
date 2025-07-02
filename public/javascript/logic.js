@@ -289,6 +289,10 @@ document.addEventListener('DOMContentLoaded', function () {
   steps.forEach(step => observer.observe(step));
 
 
-
+//mobile 
+// function toggleForm() {
+//     const formCard = document.getElementById('formCard');
+//     formCard.style.display = formCard.style.display === 'block' ? 'none' : 'block';
+//   }
 
   

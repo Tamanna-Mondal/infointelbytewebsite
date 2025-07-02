@@ -183,3 +183,28 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+/* Show "Form" button and hide form on mobile */
+/* @media (max-width: 768px) {
+  .form-card {
+    display: none;
+    width: 100% !important;
+    margin-top: 20px;
+  }
+
+  .form-toggle-btn {
+    display: inline-block;
+    background-color: #8A0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+} */
+
+/* Hide the button by default (on desktop) */
+/* .form-toggle-btn {
+  display: inline-block !important;
+} */
+
