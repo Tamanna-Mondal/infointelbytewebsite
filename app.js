@@ -22,7 +22,7 @@ app.use(methodOverride('_method'));
 // Routing 
 
 app.get('/', (req, res) => {
-  res.redirect('index.ejs');
+  res.redirect('/intelbyte');
 });
 
 app.get('/intelbyte', (req, res) => {
