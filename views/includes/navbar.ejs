@@ -71,8 +71,13 @@
       <li class="nav-item"><a class="nav-link" href="/intelbyte/contact">Contact</a></li>
       <li class="nav-item"><a class="nav-link" href="/intelbyte/package">Package</a></li>
     </ul>
- 
+ <!-- Mobile Contact Button (visible only on small screens) -->
+<button class="btn custom-red-btn d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#mobileContactForm">
+  Contact Us
+</button>
+
 </div>
+
 
 
     
@@ -139,6 +144,34 @@
   </div>
 </div>
 
+<!-- Offcanvas Form for Mobile View -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileContactForm">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Contact Us</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <form id="mobileContactFormContent" class="contact-form">
+      <input type="hidden" name="access_key" value="a70bf62b-5af1-417e-ae34-e071507cd59c">
+
+      <div class="mb-3">
+        <input type="text" name="name" class="form-control" placeholder="Name" required>
+      </div>
+      <div class="mb-3">
+        <input type="email" name="email" class="form-control" placeholder="Email Id" required>
+      </div>
+      <div class="mb-3">
+        <input type="tel" name="phone" class="form-control" placeholder="Phone No." required>
+      </div>
+      <div class="mb-3">
+        <textarea name="message" class="form-control" placeholder="Your Message" rows="3" required></textarea>
+      </div>
+
+      <button type="submit" class="btn custom-red-btn w-100">Send</button>
+      <p id="responseMessageMobile" class="text-center mt-2"></p>
+    </form>
+  </div>
+</div>
 
 
 </body>

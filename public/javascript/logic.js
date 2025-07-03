@@ -295,4 +295,14 @@ document.addEventListener('DOMContentLoaded', function () {
 //     formCard.style.display = formCard.style.display === 'block' ? 'none' : 'block';
 //   }
 
-  
+  const toggleBtn = document.getElementById('mobileFormToggleBtn');
+  const formPanel = document.getElementById('mobileFormPanel');
+  const closeBtn = document.querySelector('#mobileFormPanel .close-btn');
+
+  toggleBtn.addEventListener('click', () => {
+    formPanel.classList.add('open');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    formPanel.classList.remove('open');
+  });
