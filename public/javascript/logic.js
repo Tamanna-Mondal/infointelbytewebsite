@@ -1,9 +1,22 @@
- window.addEventListener('scroll', function () {
+  window.addEventListener('scroll', function () {
     const navbar = document.getElementById('mainNavbar');
+
+    // Sticky behavior
     if (window.scrollY > 100) {
       navbar.classList.add('sticky-navbar');
     } else {
       navbar.classList.remove('sticky-navbar');
+    }
+
+    // Auto-close mobile navbar on scroll
+    const navCollapse = document.querySelector('.navbar-collapse');
+    const navToggler = document.querySelector('.navbar-toggler');
+
+    if (navCollapse.classList.contains('show')) {
+      // Only run on small screens
+      if (window.innerWidth < 992) {
+        navToggler.click(); // Triggers the Bootstrap toggle
+      }
     }
   });
 
@@ -306,3 +319,6 @@ document.addEventListener('DOMContentLoaded', function () {
   closeBtn.addEventListener('click', () => {
     formPanel.classList.remove('open');
   });
+
+
+  
