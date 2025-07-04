@@ -1,127 +1,134 @@
 <% layout('layouts/boilerplate') %>
+
 <body>
 
-<section class="hero-section">
-  <div class="container"> 
+<!-- Hero Section -->
+<section class="hero-section py-5 bg-light">
+  <div class="container text-center">
+    <h1 class="display-5 fw-bold">Welcome to Our Tech Hub</h1>
+    <p class="lead">We deliver modern solutions using cutting-edge technologies.</p>
+  </div>
 </section>
 
-<section class="tech-stack-section">
-  <h2 class="section-title text-center" style="color: rgb(223,10,10);">Our Technology Capabilities</h2>
-<br>
-<br>
-  <div class="tabs-container">
+<!-- Tech Stack Section -->
+<section class="tech-stack-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4" style="color: rgb(223,10,10);">Our Technology Capabilities</h2>
+
     <!-- Tabs -->
-    <div class="tabs">
-      <button class="tab active" data-target="backend">Back End Programming Languages</button>
-      <button class="tab" data-target="frontend">Front End Programming Languages</button>
-      <button class="tab" data-target="mobile">Mobile</button>
-      <button class="tab" data-target="cloud">Cloud Databases, Warehouses And Storage</button>
-    </div>
-
-    <!-- Tab Contents -->
-    <div class="tech-logos">
-      <div class="tab-content active" id="backend">
-        <img src="/wordpress.png" alt="WordPress">
-        <img src="/yii.png" alt="Yii">
-        <img src="/codeigniter-logo.png" alt="CodeIgniter">
-        <img src="/laravel.jpg" alt="Laravel">
-        <img src="/node.js.png" alt="Node.js">
-        <img src="/express.js.jpg" alt="Express.js">
-        
-        <img src="/next.js.jpg" alt="Next.js">
-        <img src="/php.png" alt="PHP">
+    <div class="tabs-container">
+      <div class="d-flex flex-wrap justify-content-center mb-4 gap-2">
+        <button class="tab btn btn-outline-danger active" data-target="backend">Back End</button>
+        <button class="tab btn btn-outline-danger" data-target="frontend">Front End</button>
+        <button class="tab btn btn-outline-danger" data-target="mobile">Mobile</button>
+        <button class="tab btn btn-outline-danger" data-target="cloud">Cloud</button>
       </div>
 
-      <div class="tab-content" id="frontend">
-        <img src="../asert/Intelbyte fav Icon.png" alt="HTML5">
-        <img src="../asert/express.js.jpg" alt="CSS3">
-        <img src="img/js.png" alt="JavaScript">
-        <img src="img/react.png" alt="React">
-        <img src="img/vue.png" alt="Vue.js">
-        <img src="img/mysql.png" alt="MySQL">
-        <img src="img/mongodb.png" alt="MongoDB">
-      </div>
+      <!-- Tab Contents -->
+      <div class="tech-logos">
+        <!-- Back End -->
+        <div class="tab-content active row g-3 justify-content-center" id="backend">
+          <img src="/wordpress.png" class="tech-img" alt="WordPress">
+          <img src="/yii.png" class="tech-img" alt="Yii">
+          <img src="/codeigniter-logo.png" class="tech-img" alt="CodeIgniter">
+          <img src="/laravel.jpg" class="tech-img" alt="Laravel">
+          <img src="/node.js.png" class="tech-img" alt="Node.js">
+          <img src="/express.js.jpg" class="tech-img" alt="Express.js">
+          <img src="/next.js.jpg" class="tech-img" alt="Next.js">
+          <img src="/php.png" class="tech-img" alt="PHP">
+        </div>
 
-      <div class="tab-content" id="mobile">
-        <img src="img/flutter.png" alt="Flutter">
-        <img src="img/react-native.png" alt="React Native">
-        <img src="img/ionic.png" alt="Ionic">
-      </div>
+        <!-- Front End -->
+        <div class="tab-content row g-3 justify-content-center" id="frontend">
+          <img src="/html.png" class="tech-img" alt="HTML5">
+          <img src="/css.png" class="tech-img" alt="CSS3">
+          <img src="/js.png" class="tech-img" alt="JavaScript">
+          <img src="/react.png" class="tech-img" alt="React">
+          <img src="/vusjs.png" class="tech-img" alt="Vue.js">
+          <img src="/mysql.png" class="tech-img" alt="MySQL">
+          <img src="/mongodb.png" class="tech-img" alt="MongoDB">
+        </div>
 
-      <div class="tab-content" id="cloud">
-        <img src="img/aws.png" alt="AWS">
-        <img src="img/firebase.png" alt="Firebase">
-        <img src="img/azure.png" alt="Azure">
-        <img src="img/mongodb.png" alt="MongoDB">
-        <img src="img/mysql.png" alt="MySQL">
+        <!-- Mobile -->
+        <div class="tab-content row g-3 justify-content-center" id="mobile">
+          <img src="/flutter.png" class="tech-img" alt="Flutter">
+          <img src="/react native.png" class="tech-img" alt="React Native">
+          <img src="/ionic.jpg" class="tech-img" alt="Ionic">
+        </div>
+
+        <!-- Cloud -->
+        <div class="tab-content row g-3 justify-content-center" id="cloud">
+          <img src="/aws.png" class="tech-img" alt="AWS">
+          <img src="/firebase.png" class="tech-img" alt="Firebase">
+          <img src="/azure.jpg" class="tech-img" alt="Azure">
+          <img src="/hostinger.png" class="tech-img" alt="Hostinger">
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-
-
-<!-- Page Content -->
+<!-- Services Section -->
 <div class="container my-5">
-  <h2 class="section-title text-center" style="color: rgb(223,10,10);">Services We Offer</h2>
+  <h2 class="section-title text-center mb-4" style="color: rgb(223,10,10);">Services We Offer</h2>
 
   <div class="row g-4 justify-content-center">
 
-    <!-- Card 1: Static Website -->
-    <div class="col-md-3">
+    <!-- Card 1 -->
+    <div class="col-md-6 col-lg-3">
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front text-black text-center p-4">
             <div class="service-icon mb-2"><i class="fas fa-globe"></i></div>
-            <h4 class="fw-bold">Static Website</h4>
+            <h5 class="fw-bold">Static Website</h5>
           </div>
           <div class="flip-card-back text-white p-4">
-            <p>We integrate machine learning models into your systems to unlock automation and data-driven insights.</p>
+            <p>Build blazing-fast static websites ideal for portfolios, blogs, or small businesses.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Card 2: Custom Website -->
-    <div class="col-md-3">
+    <!-- Card 2 -->
+    <div class="col-md-6 col-lg-3">
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front text-black text-center p-4">
             <div class="service-icon mb-2"><i class="fas fa-code"></i></div>
-            <h4 class="fw-bold">Custom Websites that Drive Business</h4>
+            <h5 class="fw-bold">Custom Website</h5>
           </div>
           <div class="flip-card-back text-white p-4">
-            <p>We build secure and scalable blockchain applications tailored for business needs.</p>
+            <p>Tailored web applications with modern UX/UI and backend capabilities to suit your business model.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Card 3: CMS -->
-    <div class="col-md-3">
+    <!-- Card 3 -->
+    <div class="col-md-6 col-lg-3">
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front text-black text-center p-4">
             <div class="service-icon mb-2"><i class="fas fa-cogs"></i></div>
-            <h4 class="fw-bold">CMS (WordPress, Joomla)</h4>
+            <h5 class="fw-bold">CMS</h5>
           </div>
           <div class="flip-card-back text-white p-4">
-            <p>We design decentralized applications and smart contracts for trustless transactions on blockchain networks.</p>
+            <p>We provide CMS-based sites using WordPress, Joomla and more for easy content management.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Card 4: E-Commerce -->
-    <div class="col-md-3">
+    <!-- Card 4 -->
+    <div class="col-md-6 col-lg-3">
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front text-black text-center p-4">
             <div class="service-icon mb-2"><i class="fas fa-shopping-cart"></i></div>
-            <h4 class="fw-bold">E-commerce (Shopify, WooCommerce)</h4>
+            <h5 class="fw-bold">E-commerce</h5>
           </div>
           <div class="flip-card-back text-white p-4">
-            <p>We design decentralized applications and smart contracts for trustless transactions on blockchain networks.</p>
+            <p>Launch your online store using Shopify, WooCommerce, or custom solutions tailored to your brand.</p>
           </div>
         </div>
       </div>
@@ -129,23 +136,4 @@
 
   </div>
 </div>
-
-
-
-  <!-- <div class="process-flow">
-      <h2>Process Flow</h2>
-      <p>Planning → Designing → Development → Testing → Launch</p>
-    </div>
-  </div> -->
-
-
-
-
-
-
-
-
-
-
-
 </body>
