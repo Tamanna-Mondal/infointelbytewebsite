@@ -244,7 +244,7 @@
 
 
 <!-- testimony section -->
- <section class="testimonial-section">
+ <!-- <section class="testimonial-section">
     <div class="container">
       <h2 class="testimonial-title">Client Testimonials</h2>
       <div class="slider-wrapper">
@@ -254,7 +254,7 @@
            
             <div class="testimonial-card">
               <div class="d-flex align-items-center mb-2">
-                <!-- <img src="https://via.placeholder.com/60x60.png?text=S" class="me-3" /> -->
+               
                 <div>
                   <div class="testimonial-name">SPK TechnoSoft</div>
                   <div class="stars">★★★★★</div>
@@ -265,7 +265,7 @@
 
             <div class="testimonial-card">
               <div class="d-flex align-items-center mb-2">
-                <!-- <img src="https://via.placeholder.com/60x60.png?text=A" class="me-3" /> -->
+               
                 <div>
                   <div class="testimonial-name">Ankita Gupta</div>
                   <div class="stars">★★★★★</div>
@@ -276,7 +276,7 @@
 
             <div class="testimonial-card">
               <div class="d-flex align-items-center mb-2">
-                <!-- <img src="https://via.placeholder.com/60x60.png?text=R" class="me-3" /> -->
+                
                 <div>
                   <div class="testimonial-name">Ravi Sharma</div>
                   <div class="stars">★★★★★</div>
@@ -287,7 +287,7 @@
 
             <div class="testimonial-card">
               <div class="d-flex align-items-center mb-2">
-                <!-- <img src="https://via.placeholder.com/60x60.png?text=N" class="me-3" /> -->
+                
                 <div>
                   <div class="testimonial-name">Neha Verma</div>
                   <div class="stars">★★★★★</div>
@@ -298,7 +298,7 @@
 
             <div class="testimonial-card">
               <div class="d-flex align-items-center mb-2">
-                <!-- <img src="https://via.placeholder.com/60x60.png?text=M" class="me-3" /> -->
+                
                 <div>
                   <div class="testimonial-name">Mohit Jain</div>
                   <div class="stars">★★★★★</div>
@@ -309,7 +309,7 @@
 
             <div class="testimonial-card">
               <div class="d-flex align-items-center mb-2">
-                <!-- <img src="https://via.placeholder.com/60x60.png?text=K" class="me-3" /> -->
+                
                 <div>
                   <div class="testimonial-name">Kritika Singh</div>
                   <div class="stars">★★★★★</div>
@@ -321,7 +321,7 @@
             
             <div class="testimonial-card">
               <div class="d-flex align-items-center mb-2">
-                <!-- <img src="https://via.placeholder.com/60x60.png?text=S" class="me-3" /> -->
+               
                 <div>
                   <div class="testimonial-name">SPK TechnoSoft</div>
                   <div class="stars">★★★★★</div>
@@ -332,7 +332,7 @@
 
             <div class="testimonial-card">
               <div class="d-flex align-items-center mb-2">
-                <!-- <img src="/profile.jpg" class="me-3" /> -->
+              
                 <div>
                   <div class="testimonial-name">Ankita Gupta</div>
                   <div class="stars">★★★★★</div>
@@ -347,9 +347,36 @@
         </div>
       </div>
     </div>
-  </section>  
+  </section>   -->
 
-
+<section class="testimonial-form-section py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Submit Your Testimonial</h2>
+    <form id="testimonialForm">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Your Name" id="name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Your Company (Optional)" id="company">
+        </div>
+        <div class="col-md-12">
+          <textarea class="form-control" rows="4" placeholder="Your Review" id="message" required></textarea>
+        </div>
+        <div class="col-md-12 text-center">
+          <button type="submit" class="btn btn-primary px-4">Submit Review</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+<section class="new-testimonials mt-4">
+  <div class="container">
+    <h4 class="mb-3">Latest Testimonials</h4>
+    <div id="testimonialOutput" class="row g-4"></div>
+  </div>
+</section>
+            
 
 
 <!-- WhatsApp Chat Button -->

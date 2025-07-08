@@ -320,5 +320,38 @@ document.addEventListener('DOMContentLoaded', function () {
     formPanel.classList.remove('open');
   });
 
+   document.getElementById("testimonialForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const company = document.getElementById("company").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (name && message) {
+      const outputDiv = document.getElementById("testimonialOutput");
+
+      const card = document.createElement("div");
+      card.className = "col-md-6";
+
+      card.innerHTML = `
+        <div class="testimonial-card p-3 border rounded bg-white">
+          <div class="d-flex align-items-center mb-2">
+            <div>
+              <div class="testimonial-name fw-bold">${name}</div>
+              ${company ? `<div class="text-muted" style="font-size: 0.9em;">${company}</div>` : ""}
+              <div class="stars text-warning">★★★★★</div>
+            </div>
+          </div>
+          <p>${message}</p>
+        </div>
+      `;
+
+      outputDiv.prepend(card);
+
+      // Optional: Clear form
+      this.reset();
+    }
+  });
+
 
   
